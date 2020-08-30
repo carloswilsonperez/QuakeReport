@@ -3,18 +3,18 @@ package com.example.android.quakereport;
 public class Earthquake {
     private String mMagnitude;
     private String mLocation;
-    private String mDate;
+    private Long mTime;
 
     /**
      * Constructs a new {@Link Earthquake} object.
      * @param magnitude is the magnitude of the earthquake
      * @param location is the city location of the earthquake
-     * @param date is the date the earthquake happened
+     * @param time is the date the earthquake happened, in milliseconds
      */
-    public Earthquake(String magnitude, String location, String date) {
+    public Earthquake(String magnitude, String location, long time) {
         mMagnitude = magnitude;
         mLocation = location;
-        mDate = date;
+        mTime = time;
     }
 
     public String getMagnitude () {
@@ -25,7 +25,7 @@ public class Earthquake {
         return mLocation;
     }
 
-    public String getDate () {
-        return mDate;
+    public Long getTime () {
+        return mTime;
     }
 }

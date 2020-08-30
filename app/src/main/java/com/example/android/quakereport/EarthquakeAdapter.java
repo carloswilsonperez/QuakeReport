@@ -45,7 +45,7 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
         // Set the corresponding values for the child views
         magnitudeView.setText(currentEarthquake.getMagnitude());
         locationView.setText(currentEarthquake.getLocation());
-        dateView.setText(currentEarthquake.getDate());
+        dateView.setText(currentEarthquake.getTime().toString());
 
         // Return the list item view that is now showing the appropriate data
         return listItemView;
