@@ -14,17 +14,31 @@
         android:text="8.9" />
 
     <TextView
-        android:id="@+id/location"
+        android:id="@+id/offset_location"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="San Francisco, CA" />
+        android:text="4km NW of " />
+
+    <TextView
+        android:id="@+id/primary_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Rumoi, Japan" />
 
     <TextView
         android:id="@+id/date"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="March 6, 2010" />
+        android:text="Mar 6, 2010" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="3:00 PM" />
 
 </LinearLayout>
