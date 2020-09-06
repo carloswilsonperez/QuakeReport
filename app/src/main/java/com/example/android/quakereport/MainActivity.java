@@ -113,6 +113,13 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<L
     // use the earthquake data to update our UI - by updating the dataset in the adapter.
     @Override
     public void onLoadFinished(Loader<List<Earthquake>> loader, List<Earthquake> earthquakes) {
+        // Hide loading indicator because the data has been loaded
+        View loadingIndicator = findViewById(R.id.loading_indicator);
+        loadingIndicator.setVisibility(View.GONE);
+
+        // Set empty state text to display "No earthquakes found."
+        mEmptyStateTextView.setText(R.string.no_earthquakes);
+
         // Clear the adapter of previous earthquake data
         mAdapter.clear();
 
@@ -121,9 +128,6 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<L
         if (earthquakes != null && !earthquakes.isEmpty()) {
             mAdapter.addAll(earthquakes);
         }
-
-        // Set empty state text to display "No earthquakes found."
-        mEmptyStateTextView.setText(R.string.no_earthquakes);
     }
 
     // Third, we need onLoaderReset(), we're being informed that the data from our loader is
