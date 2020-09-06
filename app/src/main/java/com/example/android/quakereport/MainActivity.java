@@ -30,7 +30,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-// import android.support.v7.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
