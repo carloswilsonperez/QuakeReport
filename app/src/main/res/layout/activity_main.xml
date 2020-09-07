@@ -4,6 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/news_view_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#1a237e"
+        android:textColor="#ffffff"
+        android:text="Reload" />
+
     <ListView
         android:id="@+id/list"
         android:orientation="vertical"
